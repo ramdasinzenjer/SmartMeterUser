@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     >
+       <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        
+         >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tvhead1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="REGISTER HERE "
+                android:textColor="@color/colour_black"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:hint="Name "
+                android:inputType="textPersonName"
+                android:textColorHint="@color/colour_black" />
+
+    <EditText
+        android:id="@+id/etemail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/etname"
+        android:layout_below="@+id/etname"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Email Id "
+        android:inputType="textEmailAddress"
+        android:textColorHint="@color/colour_black" />
+
+    <EditText
+        android:id="@+id/etaddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Address "
+        android:textColorHint="@color/colour_black" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/etphn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/etemail"
+        android:layout_below="@+id/etemail"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Phone Number "
+        android:inputType="phone"
+        android:textColorHint="@color/colour_black" />
+
+    <EditText
+        android:id="@+id/etuname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="User Id "
+        android:inputType="textPersonName"
+        android:textColorHint="@color/colour_black" />
+
+    <EditText
+        android:id="@+id/etpass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="Password "
+        android:inputType="textPassword"
+        android:textColorHint="@color/colour_black" />
+
+    <EditText
+        android:id="@+id/etcps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Confirm Password "
+        android:inputType="textPassword"
+        android:textColorHint="@color/colour_black" />
+
+    <Button
+        android:id="@+id/btnregister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="right"
+        android:onClick="regist"
+        android:text="Register Now"
+        android:background="#8F95C2"
+        android:padding="10dp"
+        android:textColor="#fff"
+         />
+  
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

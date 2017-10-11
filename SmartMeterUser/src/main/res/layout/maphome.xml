@@ -1,0 +1,48 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+     >    
+    
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >	    
+	    
+	    <Button 
+	        android:id="@+id/btn_find"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content" 
+	        android:text="Find" 
+	        android:background="#8F95C2"
+        android:padding="10dp"
+        android:textColor="#fff"
+	        android:layout_alignParentRight="true" />
+	    
+	    <EditText
+	        android:id="@+id/et_location"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_toLeftOf="@+id/btcurrent"
+	        android:hint="Enter Location"
+	        android:inputType="text" />
+
+	    <Button
+	        android:id="@+id/btcurrent"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentTop="true"
+	        android:layout_toLeftOf="@+id/btn_find"
+	        android:text=""
+	        android:background="@android:drawable/ic_menu_mapmode" />
+	    
+    </RelativeLayout>    
+
+    <fragment 
+		android:id="@+id/map"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		class="com.google.android.gms.maps.SupportMapFragment" />
+
+</LinearLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <Button
+        android:id="@+id/btnupp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#8F95C2"
+        android:padding="10dp"
+        android:textColor="#fff"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="180dp"
+        android:text="Update Profile" />
+
+    <Button
+        android:id="@+id/btnfindrk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btnupp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="80dp"
+        android:background="#8F95C2"
+        android:padding="10dp"
+        android:textColor="#fff"
+        android:text="Find Nearby Rickshaws" />
+
+    <ImageView
+        android:id="@+id/imagebtnalert"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/btnupp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/help_me"
+         />
+
+</RelativeLayout>
